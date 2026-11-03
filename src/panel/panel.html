@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'">
+<title>Feedbell</title>
+<link rel="stylesheet" href="../shared/themes.css">
+<link rel="stylesheet" href="panel.css">
+</head>
+<body>
+<div class="panel">
+  <header class="head">
+    <img class="logo" src="../assets/icon.png" alt="">
+    <div class="title"><b>Feedbell</b><span id="sub"></span></div>
+    <button class="ib" data-act="refresh" id="btn-refresh" data-i18n-title="common.refreshNow">
+      <svg viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 0 5.6 6.8L4 8.5M4 4v4.5h4.5M4 12.5a8 8 0 0 0 14.4 4.7l1.6-1.7m0 4.5v-4.5h-4.5"/></svg>
+    </button>
+    <button class="ib" data-act="open-app" data-i18n-title="panel.openApp">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9h17M9 9v10.5"/></svg>
+    </button>
+    <button class="ib" data-act="more" data-i18n-title="panel.more">
+      <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.5" class="f"/><circle cx="12" cy="12" r="1.5" class="f"/><circle cx="18" cy="12" r="1.5" class="f"/></svg>
+    </button>
+  </header>
+
+  <section class="bell" id="bell"></section>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="notifications"><span data-i18n="panel.tabNotifications"></span><span class="n" id="n-notifications"></span></button>
+    <button role="tab" data-tab="unread"><span data-i18n="panel.tabUnread"></span><span class="n" id="n-unread"></span></button>
+    <button role="tab" data-tab="feeds"><span data-i18n="panel.tabFeeds"></span><span class="n" id="n-feeds"></span></button>
+  </nav>
+
+  <main class="list" id="list" role="tabpanel"></main>
+  <footer class="foot" id="foot"></footer>
+</div>
+<div class="snack hidden" id="snack" role="status"></div>
+<script src="../shared/i18n.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>

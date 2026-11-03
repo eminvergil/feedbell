@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title type="text">Atom Örneği</title>
+  <subtitle>Alt başlık</subtitle>
+  <link rel="self" href="https://atom.example/feed"/>
+  <link rel="alternate" type="text/html" href="https://atom.example/"/>
+  <icon>https://atom.example/favicon.png</icon>
+  <author><name>Ortak Yazar</name></author>
+  <entry>
+    <id>tag:atom.example,2026:1</id>
+    <title type="html">&lt;i&gt;Vurgulu&lt;/i&gt; başlık</title>
+    <link rel="alternate" href="https://atom.example/1"/>
+    <link rel="replies" href="https://atom.example/1#c"/>
+    <published>2026-10-28T08:00:00Z</published>
+    <updated>2026-10-28T09:00:00Z</updated>
+    <summary>Özet metni</summary>
+    <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>XHTML <a href="/x">içerik</a></p><br/><p>son</p></div></content>
+  </entry>
+  <entry>
+    <id>yt:video:abc</id>
+    <title>Video başlığı</title>
+    <link rel="alternate" href="https://video.example/watch?v=abc"/>
+    <updated>2026-10-27T12:00:00+03:00</updated>
+    <media:group>
+      <media:title>Video başlığı</media:title>
+      <media:thumbnail url="https://i.video.example/abc.jpg" width="480" height="360"/>
+      <media:description>Satır bir
+Satır iki</media:description>
+    </media:group>
+  </entry>
+</feed>

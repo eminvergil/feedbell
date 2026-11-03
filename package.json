@@ -1,0 +1,101 @@
+{
+  "name": "feedbell",
+  "productName": "Feedbell",
+  "version": "2.0.0",
+  "description": "Desktop RSS/Atom reader that rings when something new is published — popup notifications, a menu bar panel, themes and translations (macOS · Windows)",
+  "license": "MIT",
+  "author": "eminvergil",
+  "homepage": "https://github.com/eminvergil/feedbell#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eminvergil/feedbell.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eminvergil/feedbell/issues"
+  },
+  "keywords": [
+    "rss",
+    "atom",
+    "feed-reader",
+    "notifications",
+    "electron",
+    "menubar"
+  ],
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "demo": "electron . --demo",
+    "test": "node --test test/*.test.js",
+    "dist": "electron-builder",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "dist:dir": "electron-builder --dir",
+    "icons": "bash scripts/make-icons.sh",
+    "i18n:check": "node scripts/i18n-check.js"
+  },
+  "devDependencies": {
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.feedbell.desktop",
+    "productName": "Feedbell",
+    "artifactName": "Feedbell-${version}-${arch}.${ext}",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.news",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.icns",
+      "identity": "-",
+      "hardenedRuntime": false,
+      "extendInfo": {
+        "LSUIElement": false,
+        "NSUserNotificationAlertStyle": "banner"
+      }
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Feedbell",
+      "uninstallDisplayName": "Feedbell"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Network"
+    },
+    "icon": "build/icon.png",
+    "dmg": {
+      "title": "Feedbell ${version}"
+    }
+  }
+}

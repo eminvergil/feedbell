@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel rdf:about="https://rdf.example/">
+    <title>RDF Kanalı</title>
+    <link>https://rdf.example/</link>
+    <description>RSS 1.0</description>
+  </channel>
+  <item rdf:about="https://rdf.example/a">
+    <title>RDF yazısı</title>
+    <link>https://rdf.example/a</link>
+    <dc:date>2026-10-26T10:00:00+00:00</dc:date>
+    <description>RDF açıklama</description>
+  </item>
+</rdf:RDF>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Örnek Blog &amp; Notlar</title>
+  <link>https://ornek.example/</link>
+  <atom:link href="https://ornek.example/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Oyun geliştirme üzerine</description>
+  <image><url>https://ornek.example/logo.png</url></image>
+  <item>
+    <title><![CDATA[Godot 4 ile <b>ilk</b> oyun]]></title>
+    <link>/yazi/ilk-oyun</link>
+    <guid isPermaLink="false">post-1</guid>
+    <pubDate>Tue, 27 Oct 2026 10:00:00 +0300</pubDate>
+    <dc:creator>Deniz Aydın</dc:creator>
+    <description>Kısa &lt;em&gt;özet&lt;/em&gt; metni</description>
+    <content:encoded><![CDATA[<p>Uzun içerik <img src="/img/kapak.png" width="600"></p><p>İkinci paragraf</p>]]></content:encoded>
+    <media:thumbnail url="https://cdn.example/thumb.jpg"/>
+  </item>
+  <item>
+    <title>Tom &amp;amp; Jerry &#8211; bölüm 2</title>
+    <link>https://ornek.example/yazi/2</link>
+    <pubDate>Salı, 28 Ekim 2026 09:30:00 +0300</pubDate>
+    <author>yazar@ornek.example (Ece Kara)</author>
+    <description><p>Ham <b>HTML</b> açıklama<br>kaçışsız</p></description>
+    <enclosure url="https://ornek.example/bolum2.mp3" type="audio/mpeg" length="1234"/>
+    <comments>https://ornek.example/yazi/2#yorumlar</comments>
+  </item>
+  <item>
+    <description>Başlığı olmayan bir yazı, yalnızca açıklaması var.</description>
+    <guid>https://ornek.example/yazi/3</guid>
+  </item>
+</channel>
+</rss>

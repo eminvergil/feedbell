@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "name": "Türkçe",
+    "englishName": "Turkish",
+    "locale": "tr-TR",
+    "translators": []
+  },
+  "common": {
+    "add": "Ekle",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "close": "Kapat",
+    "settings": "Ayarlar",
+    "refreshNow": "Şimdi yenile",
+    "openInBrowser": "Tarayıcıda aç",
+    "undo": "Geri al",
+    "addFeed": "Kaynak ekle",
+    "deletedFeed": "Silinmiş kaynak",
+    "untitled": "(Başlıksız)",
+    "space": "Boşluk"
+  },
+  "time": {
+    "now": "şimdi",
+    "minutesShort": "{count} dk",
+    "hoursShort": "{count} sa",
+    "yesterdayShort": "dün",
+    "daysShort": "{count} gün",
+    "minutesAgo": {
+      "other": "{count} dk önce"
+    },
+    "hoursAgo": {
+      "other": "{count} sa önce"
+    },
+    "yesterdayAt": "dün {time}",
+    "daysAgo": {
+      "other": "{count} gün önce"
+    },
+    "today": "Bugün",
+    "yesterday": "Dün",
+    "earlier": "Daha önce"
+  },
+  "snooze": {
+    "title": "Sustur",
+    "hour1": "1 saat",
+    "hour4": "4 saat",
+    "morning": "Yarın sabaha kadar",
+    "morningShort": "Sabaha kadar",
+    "forever": "Ben açana kadar",
+    "until": "{time}'e kadar",
+    "untilTomorrow": "yarın {time}'e kadar",
+    "untilOn": "sen açana kadar"
+  },
+  "nav": {
+    "all": "Tümü",
+    "unread": "Okunmamış",
+    "starred": "Yıldızlı",
+    "notifications": "Bildirimler",
+    "feeds": "Kaynaklar",
+    "addFeedTitle": "Kaynak ekle (N)"
+  },
+  "sidebar": {
+    "noFeeds": "Henüz bir kaynağa abone değilsin.",
+    "notifyOff": "bildirim kapalı",
+    "feedSettings": "Kaynak ayarları",
+    "refreshing": "Yenileniyor…",
+    "refreshingProgress": "Yenileniyor… {done}/{total}",
+    "justRefreshed": "Az önce yenilendi",
+    "lastRefresh": "Son yenileme {time}",
+    "neverRefreshed": "Henüz yenilenmedi",
+    "problems": {
+      "other": "{count} kaynakta sorun"
+    },
+    "bellOn": "Bildirimler açık",
+    "bellOff": "Bildirimler kapalı",
+    "bellSnoozed": "Susturuldu · {until}",
+    "bellQuiet": "Sessiz saatler"
+  },
+  "bellMenu": {
+    "unsnooze": "Bildirimleri şimdi aç",
+    "enable": "Bildirimleri aç",
+    "test": "Deneme bildirimi gönder",
+    "history": "Bildirim geçmişi",
+    "settings": "Bildirim ayarları"
+  },
+  "list": {
+    "search": "Yazılarda ara  /",
+    "unreadOnly": "Yalnızca okunmamışları göster",
+    "showAll": "Tüm yazıları göster",
+    "markAll": "Bu listedekilerin tümünü okundu işaretle (Shift+A)",
+    "refresh": "Yenile (R)",
+    "noFeedsYet": "Henüz kaynak yok",
+    "results": {
+      "other": "“{q}” için {count} sonuç"
+    },
+    "posts": {
+      "other": "{count} yazı"
+    },
+    "unread": {
+      "other": "{count} okunmamış"
+    },
+    "allRead": "hepsi okundu",
+    "loadMore": "Daha fazla göster ({count})",
+    "emptyNoFeedsTitle": "Yazı yok",
+    "emptyNoFeedsText": "Bir kaynak eklediğinde yazılar burada listelenir.",
+    "emptyTitle": "Burada yazı yok",
+    "noResultsTitle": "Sonuç bulunamadı",
+    "noResultsText": "Başka bir kelimeyle ara.",
+    "noStarredTitle": "Yıldızlı yazı yok",
+    "noStarredText": "Sonra okumak istediğin yazıları S tuşuyla yıldızla.",
+    "allDoneTitle": "Hepsini okudun 🎉",
+    "allDoneText": "Yeni yazı gelince haber vereceğim.",
+    "markedRead": {
+      "other": "{count} yazı okundu olarak işaretlendi."
+    },
+    "nothingUnread": "Okunmamış yazı yoktu."
+  },
+  "reader": {
+    "embedded": "Gömülü içerik: {host}",
+    "image": "[Görsel: {alt}]",
+    "markUnread": "Okunmadı olarak işaretle (M)",
+    "markRead": "Okundu olarak işaretle (M)",
+    "unstar": "Yıldızı kaldır (S)",
+    "star": "Yıldızla (S)",
+    "comments": "Yorumlar",
+    "openKey": "Tarayıcıda aç (O)",
+    "readOnSite": "Yazının tamamını sitede oku",
+    "noContent": "Bu kaynak yazının içeriğini beslemede paylaşmıyor. Tamamını okumak için siteyi aç.",
+    "pick": "Okumak için bir yazı seç",
+    "keyboardHint": "Klavyeyle de gezinebilirsin:",
+    "postGone": "Bu yazı artık kayıtlı değil."
+  },
+  "welcome": {
+    "title": "Feedbell'e hoş geldin",
+    "p1": "Takip etmek istediğin sitelerin RSS ya da Atom beslemelerini ekle. Feedbell onları arka planda düzenli olarak kontrol eder; yeni bir yazı geldiğinde ekranın köşesinde bir popup çıkar ve bildirim geçmişine kaydedilir.",
+    "p2": "Bir site adresi yazman yeterli, beslemeyi ben bulurum. Başka bir okuyucudan geliyorsan aboneliklerini Ayarlar'dan OPML ile aktarabilirsin.",
+    "quickStart": "Hızlı başlangıç — tıkla, eklensin"
+  },
+  "keys": {
+    "nextPrev": "Sonraki / önceki yazı",
+    "space": "Aşağı kaydır, sonra sonraki yazı",
+    "open": "Tarayıcıda aç",
+    "star": "Yıldızla",
+    "toggleRead": "Okundu / okunmadı",
+    "starUnread": "Yıldızla / okunmadı yap",
+    "refreshAdd": "Yenile / kaynak ekle",
+    "markAll": "Listedekilerin tümünü okundu say",
+    "refresh": "Yenile",
+    "add": "Kaynak ekle",
+    "search": "Ara",
+    "settings": "Ayarlar",
+    "views": "Tümü / Okunmamış / Yıldızlı / Bildirimler",
+    "addRefreshAll": "Kaynak ekle · Hepsini yenile"
+  },
+  "notifications": {
+    "title": "Bildirimler",
+    "sub": {
+      "other": "Son {count} bildirim"
+    },
+    "none": "Henüz bildirim yok",
+    "allFeeds": "Tüm kaynaklar",
+    "clear": "Geçmişi temizle",
+    "unsnooze": "Şimdi aç",
+    "enable": "Bildirimleri aç",
+    "snooze": "Sustur…",
+    "test": "Deneme bildirimi",
+    "emptyTitle": "Bildirim geçmişi boş",
+    "emptyText": "Abone olduğun kaynaklara yeni yazı geldiğinde burada listelenir.",
+    "gone": "(artık kayıtlı değil)",
+    "more": {
+      "other": "+{count} yazı daha"
+    },
+    "newPosts": {
+      "other": "{count} yeni yazı"
+    },
+    "silentQuiet": "Sessiz saatlerde geldi",
+    "silentSnoozed": "Susturulmuşken geldi",
+    "silentOff": "Bildirimler kapalıyken geldi",
+    "stylePopup": "popup penceresiyle",
+    "styleSystem": "sistem bildirimiyle",
+    "styleBoth": "popup ve sistem bildirimiyle",
+    "statusOffTitle": "Bildirimler kapalı",
+    "statusOffText": "Yeni yazılar yine de bu geçmişe kaydedilir.",
+    "statusSnoozedTitle": "Bildirimler {until} susturuldu",
+    "statusSnoozedText": "Bu sürede gelen yazılar burada birikir, popup çıkmaz.",
+    "statusQuietTitle": "Sessiz saatlerdesin",
+    "statusQuietText": "{start}–{end} arasında popup çıkmaz; gelenler burada birikir.",
+    "statusOnTitle": "Bildirimler açık",
+    "statusOnText": "Yeni yazı gelince {style} haber veriyorum · her {min} dakikada bir kontrol."
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "sub": "Değişiklikler hemen kaydedilir.",
+    "notificationsTitle": "Bildirimler",
+    "notificationsDesc": "Abone olduğun bir kaynağa yeni yazı gelince nasıl haber vereyim?",
+    "notifyStyle": "Bildirim türü",
+    "notifyStyleHint": "Popup, ekranın köşesinde Feedbell'in kendi penceresi olarak çıkar ve işletim sisteminin bildirim izinlerine ihtiyaç duymaz.",
+    "stylePopup": "Popup penceresi",
+    "styleSystem": "Sistem bildirimi",
+    "styleBoth": "İkisi birden",
+    "styleOff": "Kapalı (yalnızca geçmişe yaz)",
+    "popupPosition": "Popup konumu",
+    "topRight": "Sağ üst",
+    "bottomRight": "Sağ alt",
+    "topLeft": "Sol üst",
+    "bottomLeft": "Sol alt",
+    "popupSeconds": "Popup ekranda kalma süresi",
+    "popupSecondsHint": "Farenin üzerindeyken süre durur.",
+    "seconds": {
+      "other": "{count} saniye"
+    },
+    "untilClosed": "Ben kapatana kadar",
+    "sound": "Bildirim sesi",
+    "quietHours": "Sessiz saatler",
+    "quietHoursHint": "Bu saatler arasında popup çıkmaz; gelen yazılar bildirim geçmişinde birikir.",
+    "tryIt": "Nasıl göründüğünü dene",
+    "tryItHint": "En son gelen yazıyla örnek bir bildirim gösterir.",
+    "tryItHintMac": "Sistem bildirimi görünmezse Sistem Ayarları → Bildirimler bölümünden Feedbell'e (geliştirme sırasında \"Electron\") izin ver.",
+    "tryItHintWin": "Sistem bildirimi görünmezse Windows Ayarları → Bildirimler bölümünden Feedbell'e izin ver.",
+    "sendTest": "Deneme bildirimi gönder",
+    "refreshTitle": "Yenileme",
+    "interval": "Kaynakları kontrol etme sıklığı",
+    "intervalHint": "Hata veren kaynaklar daha seyrek denenir.",
+    "everyMinutes": {
+      "other": "{count} dakikada bir"
+    },
+    "everyHours": {
+      "other": "{count} saatte bir"
+    },
+    "checkNow": "Hepsini şimdi kontrol et",
+    "readingTitle": "Okuma",
+    "markReadOnOpen": "Açtığım yazıyı okundu say",
+    "loadImages": "Görselleri yükle",
+    "loadImagesHint": "Kapatırsan yazılardaki görseller sitelerden indirilmez.",
+    "retention": "Eski yazıları sil",
+    "retentionHint": "Yıldızlı yazılar hiçbir zaman silinmez.",
+    "olderThanDays": {
+      "other": "{count} günden eskileri"
+    },
+    "olderThanYear": "1 yıldan eskileri",
+    "never": "Hiçbir zaman",
+    "appearanceTitle": "Görünüm",
+    "mode": "Mod",
+    "modeSystem": "Sistemle aynı",
+    "modeLight": "Açık",
+    "modeDark": "Koyu",
+    "theme": "Tema",
+    "themeHint": "Ana pencereye, menü çubuğu paneline ve popup'lara uygulanır.",
+    "defaultTheme": "varsayılan",
+    "readerFont": "Okuma yazı tipi",
+    "fontSans": "Tırnaksız (sans-serif)",
+    "fontSerif": "Tırnaklı (serif)",
+    "readerSize": "Yazı boyutu",
+    "sizeSmall": "Küçük",
+    "sizeMedium": "Orta",
+    "sizeLarge": "Büyük",
+    "sizeXLarge": "Çok büyük",
+    "language": "Dil",
+    "languageHint": "Feedbell'i kendi dilinde mi istiyorsun? Her çeviri tek bir dosyada; CONTRIBUTING.md'ye bak.",
+    "languageSystem": "Sistem dili ({name})",
+    "appTitle": "Uygulama",
+    "launchAtLogin": "Bilgisayar açılınca başlat",
+    "launchAtLoginHint": "Arka planda, pencere açmadan başlar; bildirimler gelmeye devam eder.",
+    "trayMac": "Menü çubuğu simgesi",
+    "trayWin": "Sistem tepsisi simgesi",
+    "trayHint": "Tıklayınca bildirim paneli açılır: son bildirimler, okunmamışlar, kaynak başına bildirim açma/kapama ve susturma. Sağ tık hızlı menüyü açar. Görülmemiş bildirim varsa simgede nokta çıkar.",
+    "showPanel": "Paneli göster",
+    "showCount": "Okunmamış sayısını göster",
+    "showCountHintMac": "Menü çubuğu simgesinin yanında ve Dock simgesinde.",
+    "showCountHintWin": "Sistem tepsisi simgesinin ipucunda.",
+    "subscriptionsTitle": "Abonelikler",
+    "subscriptionsDesc": {
+      "other": "{count} kaynak · OPML, RSS okuyucularının ortak abonelik listesi biçimidir."
+    },
+    "importOpml": "OPML içe aktar",
+    "exportOpml": "OPML dışa aktar",
+    "openData": "Veri klasörünü aç",
+    "shortcutsTitle": "Klavye kısayolları",
+    "footer": "Feedbell {version}{demo} · Veriler yalnızca bu bilgisayarda: {dir}",
+    "demoMode": " · tanıtım modu (örnek veri)",
+    "opmlAdded": {
+      "other": "{count} kaynak eklendi"
+    },
+    "opmlSkipped": {
+      "other": ", {count} tanesi zaten vardı"
+    },
+    "opmlDownloading": ". Yazılar indiriliyor…",
+    "opmlNothing": "Yeni kaynak yok; hepsine zaten abonesin.",
+    "noFeedsToExport": "Dışa aktarılacak kaynak yok.",
+    "exported": {
+      "other": "{count} kaynak dışa aktarıldı."
+    },
+    "testSystem": "Sistem bildirimi gönderildi. Görmediysen işletim sisteminin bildirim izinlerine bak.",
+    "testSent": "Deneme bildirimi gönderildi."
+  },
+  "themes": {
+    "ember": "Kor",
+    "ocean": "Okyanus",
+    "forest": "Orman",
+    "lavender": "Lavanta",
+    "sepia": "Sepya",
+    "graphite": "Grafit"
+  },
+  "addDialog": {
+    "title": "Kaynak ekle",
+    "hint": "Sitenin adresini ya da RSS/Atom beslemesinin adresini yaz. Site adresi verirsen beslemeyi ben bulurum.",
+    "url": "Adres",
+    "urlPlaceholder": "ör. godotengine.org",
+    "folder": "Klasör",
+    "optional": "isteğe bağlı",
+    "folderPlaceholder": "ör. Oyun geliştirme",
+    "notify": "Yeni yazılarda bildirim gönder",
+    "submitChosen": "Seçileni ekle",
+    "checking": "Kontrol ediliyor…",
+    "quickStart": "Hızlı başlangıç",
+    "needUrl": "Bir adres yaz.",
+    "choices": {
+      "other": "Bu sayfada {count} besleme var, hangisini ekleyeyim?"
+    },
+    "added": "“{name}” eklendi.",
+    "githubReleases": "yeni sürümler",
+    "githubTags": "etiketler",
+    "githubCommits": "commitler"
+  },
+  "feedDialog": {
+    "title": "Kaynak ayarları",
+    "name": "Görünen ad",
+    "folder": "Klasör",
+    "folderPlaceholder": "Klasörsüz",
+    "notify": "Yeni yazılarda bildirim gönder",
+    "keywords": "Yalnızca şu kelimeler geçince bildir",
+    "keywordsHint": "virgülle ayır · boş bırakırsan hepsi",
+    "keywordsPlaceholder": "ör. godot, sürüm, indirim",
+    "delete": "Aboneliği sil",
+    "lastError": "Son deneme {time}: {error}",
+    "lastOk": "Son başarılı kontrol: {date}",
+    "neverChecked": "Henüz kontrol edilmedi.",
+    "openSite": "Siteyi aç",
+    "markAllRead": "Tümünü okundu say",
+    "saved": "Kaynak ayarları kaydedildi.",
+    "deleted": "Abonelik silindi.",
+    "refreshing": "{name} yenileniyor…"
+  },
+  "panel": {
+    "unread": {
+      "other": "{count} okunmamış"
+    },
+    "noUnread": "Okunmamış yazı yok",
+    "refreshing": "yenileniyor…",
+    "refreshingProgress": "yenileniyor {done}/{total}",
+    "justRefreshed": "az önce yenilendi",
+    "refreshedAt": "{time}'de yenilendi",
+    "openApp": "Feedbell'i aç",
+    "more": "Bildirim seçenekleri ve çıkış",
+    "stylePopup": "popup olarak",
+    "styleSystem": "sistem bildirimi olarak",
+    "styleBoth": "popup + sistem bildirimi olarak",
+    "onTitle": "Bildirimler açık",
+    "onText": "Yeni yazılar {style} gelir",
+    "onTextSound": "Yeni yazılar {style} gelir, sesli",
+    "snoozedTitle": "Bildirimler susturuldu",
+    "snoozedText": "{until} · gelenler geçmişte birikir",
+    "quietTitle": "Sessiz saatler",
+    "quietText": "{start}–{end} arası popup çıkmaz",
+    "offTitle": "Bildirimler kapalı",
+    "offText": "Yeni yazılar yalnızca geçmişe yazılır",
+    "unsnooze": "Şimdi aç",
+    "enable": "Bildirimleri aç",
+    "snoozeLabel": "Sustur:",
+    "switchOff": "Bildirimleri sustur",
+    "switchOn": "Bildirimleri aç",
+    "tabNotifications": "Bildirimler",
+    "tabUnread": "Okunmamış",
+    "tabFeeds": "Kaynaklar",
+    "emptyNotificationsTitle": "Henüz bildirim yok",
+    "emptyNotificationsText": "Abone olduğun kaynaklara yeni yazı gelince burada görünür.",
+    "emptyNotificationsNoFeeds": "Önce birkaç kaynak ekle; yeni yazılar geldikçe burada listelenir.",
+    "emptyUnreadNoFeeds": "Bir kaynak eklediğinde yazılar burada görünür.",
+    "emptyFeedsTitle": "Henüz kaynak yok",
+    "emptyFeedsText": "Takip etmek istediğin siteleri ekle.",
+    "silentQuiet": "sessiz saatte",
+    "silentSnoozed": "susturulmuşken",
+    "silentOff": "kapalıyken",
+    "posts": {
+      "other": "{count} yazı"
+    },
+    "morePosts": {
+      "other": "+{count} yazı daha"
+    },
+    "actRead": "Okundu say",
+    "actMute": "Bu kaynaktan bildirim alma",
+    "actUnmute": "Bu kaynağın bildirimlerini aç",
+    "actRemove": "Geçmişten kaldır",
+    "feedsHeader": {
+      "other": "{on}/{count} kaynak bildirim gönderiyor"
+    },
+    "only": "yalnızca: {words}",
+    "notifyOff": "Bildirimleri kapat",
+    "notifyOn": "Bildirimleri aç",
+    "feedNotifications": "{name} bildirimleri",
+    "lastN": {
+      "other": "Son {count} bildirim"
+    },
+    "clear": "Temizle",
+    "fullHistory": "Tüm geçmiş",
+    "confirmClear": "Bildirim geçmişi temizlensin mi?",
+    "clearYes": "Temizle",
+    "showing": "{shown} / {count} gösteriliyor",
+    "markAllRead": "Tümünü okundu say",
+    "readInApp": "Uygulamada oku",
+    "notificationSettings": "Bildirim ayarları",
+    "addFeedPlus": "+ Kaynak ekle",
+    "unmuted": "{name} için bildirimler açıldı.",
+    "muted": "{name} artık bildirim göndermeyecek.",
+    "snoozedMorning": "Bildirimler yarın sabaha kadar susturuldu.",
+    "snoozedHours": {
+      "other": "Bildirimler {count} saat susturuldu."
+    },
+    "snoozedForever": "Bildirimler sen açana kadar susturuldu."
+  },
+  "toast": {
+    "newPosts": {
+      "other": "{count} yeni yazı"
+    },
+    "more": {
+      "other": "+{count} yazı daha"
+    },
+    "read": "Oku",
+    "seeAll": "Hepsini gör",
+    "moreFeeds": {
+      "other": "{feeds} kaynaktan {count} yazı daha"
+    },
+    "openHistory": "Bildirim geçmişini aç"
+  },
+  "system": {
+    "manyTitle": {
+      "other": "{count} yeni yazı"
+    },
+    "manyBody": "{feeds} kaynaktan: {names}",
+    "andOthers": " ve diğerleri",
+    "feedMany": {
+      "other": "{feed} · {count} yeni yazı"
+    },
+    "closeHintTitle": "Feedbell arka planda çalışıyor",
+    "closeHintMac": "Yeni yazıları kontrol etmeye ve bildirmeye devam edeceğim. Menü çubuğundaki simgeye tıklayınca bildirim paneli açılır; tamamen kapatmak için simgeye sağ tıklayıp Feedbell'den çık'ı seç.",
+    "closeHintWin": "Yeni yazıları kontrol etmeye ve bildirmeye devam edeceğim. Sistem tepsisindeki simgeye tıklayınca bildirim paneli açılır; tamamen kapatmak için simgeye sağ tıklayıp Feedbell'den çık'ı seç.",
+    "testTitle": "Bildirimler çalışıyor",
+    "testBody": "Abone olduğun kaynaklara yeni yazı gelince böyle haber vereceğim.",
+    "aboutCredits": "RSS ve Atom beslemelerini takip eden, yeni yazıları bildiren okuyucu."
+  },
+  "confirm": {
+    "removeFeedMessage": "“{name}” aboneliği silinsin mi?",
+    "removeFeedDetail": {
+      "other": "Bu kaynaktan kayıtlı {count} yazı da silinir (yıldızlılar dahil). Bildirim geçmişi kalır."
+    },
+    "removeFeedOk": "Sil",
+    "clearMessage": "Bildirim geçmişi temizlensin mi?",
+    "clearDetail": "Yazıların kendisi silinmez, yalnızca geçmiş listesi boşalır.",
+    "clearOk": "Temizle"
+  },
+  "opml": {
+    "importTitle": "OPML dosyasından içe aktar",
+    "exportTitle": "Abonelikleri dışa aktar",
+    "fileName": "feedbell-abonelikler.opml",
+    "docTitle": "Feedbell abonelikleri"
+  },
+  "tray": {
+    "unread": {
+      "other": "{count} okunmamış yazı"
+    },
+    "noUnread": "Okunmamış yazı yok",
+    "refreshing": "Yenileniyor… ({done}/{total})",
+    "lastRefresh": "Son yenileme {time}",
+    "neverRefreshed": "Henüz yenilenmedi",
+    "openPanel": "Bildirim panelini aç",
+    "openApp": "Feedbell'i aç",
+    "recent": "Son bildirimler",
+    "noneYet": "Henüz bildirim yok",
+    "history": "Bildirim geçmişi",
+    "test": "Deneme bildirimi gönder",
+    "settings": "Ayarlar…",
+    "quit": "Feedbell'den çık",
+    "newPosts": {
+      "other": "{count} yeni yazı"
+    },
+    "tooltipUnread": {
+      "other": "Feedbell — {count} okunmamış yazı"
+    },
+    "tooltipNew": {
+      "other": "{count} yeni bildirim"
+    },
+    "tooltipSnoozed": "Bildirimler {until} susturuldu",
+    "tooltipQuiet": "Sessiz saatler",
+    "tooltipOff": "Bildirimler kapalı",
+    "notifyOn": "Bildirimleri aç",
+    "unsnooze": "Bildirimleri aç ({until} susturuldu)",
+    "snooze": "Bildirimleri sustur"
+  },
+  "panelMenu": {
+    "style": "Bildirim türü",
+    "position": "Popup konumu",
+    "duration": "Popup süresi",
+    "sound": "Bildirim sesi",
+    "quiet": "Sessiz saatler ({start}–{end})"
+  },
+  "menu": {
+    "about": "Feedbell Hakkında",
+    "settings": "Ayarlar…",
+    "services": "Hizmetler",
+    "hide": "Feedbell'i gizle",
+    "hideOthers": "Diğerlerini gizle",
+    "unhide": "Tümünü göster",
+    "quit": "Feedbell'den çık",
+    "file": "Dosya",
+    "addFeed": "Kaynak ekle…",
+    "refreshAll": "Hepsini yenile",
+    "importOpml": "OPML içe aktar…",
+    "exportOpml": "OPML dışa aktar…",
+    "closeWindow": "Pencereyi kapat",
+    "exit": "Çıkış",
+    "edit": "Düzen",
+    "undo": "Geri al",
+    "redo": "Yinele",
+    "cut": "Kes",
+    "copy": "Kopyala",
+    "paste": "Yapıştır",
+    "selectAll": "Tümünü seç",
+    "find": "Yazılarda ara",
+    "view": "Görünüm",
+    "all": "Tümü",
+    "unread": "Okunmamış",
+    "starred": "Yıldızlı",
+    "history": "Bildirim geçmişi",
+    "markAll": "Listedekilerin tümünü okundu say",
+    "theme": "Tema",
+    "mode": "Mod",
+    "zoomIn": "Büyüt",
+    "zoomOut": "Küçült",
+    "resetZoom": "Gerçek boyut",
+    "fullscreen": "Tam ekran",
+    "devtools": "Geliştirici araçları",
+    "notifications": "Bildirimler",
+    "openPanel": "Bildirim panelini aç",
+    "test": "Deneme bildirimi gönder",
+    "notificationSettings": "Bildirim ayarları…",
+    "window": "Pencere",
+    "minimize": "Küçült",
+    "zoom": "Yakınlaştır",
+    "front": "Tümünü öne getir",
+    "help": "Yardım",
+    "shortcuts": "Klavye kısayolları",
+    "dataFolder": "Veri klasörünü aç"
+  },
+  "errors": {
+    "notFeed": "Bu adres bir RSS/Atom beslemesi değil.",
+    "emptyResponse": "Sunucu boş yanıt döndürdü.",
+    "noFeedOnPage": "Bu sayfada RSS/Atom beslemesi bulunamadı. Beslemenin adresini doğrudan yazmayı dene.",
+    "emptyUrl": "Bir adres yaz.",
+    "invalidUrl": "Bu geçerli bir adres değil.",
+    "httpOnly": "Yalnızca http ve https adresleri desteklenir.",
+    "timeout": "Bağlantı zaman aşımına uğradı.",
+    "dns": "Sunucu bulunamadı. Adresi ve internet bağlantını kontrol et.",
+    "offline": "İnternet bağlantısı yok.",
+    "refused": "Sunucu bağlantıyı reddetti.",
+    "certificate": "Güvenli bağlantı kurulamadı (sertifika hatası).",
+    "redirects": "Çok fazla yönlendirme var.",
+    "network": "Bağlantı kurulamadı ({detail}).",
+    "http400": "Sunucu isteği kabul etmedi (400).",
+    "http401": "Bu besleme giriş yapmayı istiyor (401).",
+    "http403": "Site erişimi engelledi (403).",
+    "http404": "Adres bulunamadı (404).",
+    "http410": "Besleme kaldırılmış (410).",
+    "http429": "Çok sık istek gönderildi; site bir süre bekletiyor (429).",
+    "http5xx": "Sunucu hatası ({status}). Daha sonra yeniden denenecek.",
+    "httpOther": "Sunucu {status} hatası döndürdü.",
+    "tooLarge": "Yanıt çok büyük.",
+    "opmlInvalid": "Bu dosya bir OPML dosyası değil.",
+    "alreadySubscribed": "Bu kaynağa zaten abonesin: {name}"
+  }
+}

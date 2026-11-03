@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "name": "English",
+    "englishName": "English",
+    "locale": "en-US",
+    "translators": []
+  },
+  "common": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "settings": "Settings",
+    "refreshNow": "Refresh now",
+    "openInBrowser": "Open in browser",
+    "undo": "Undo",
+    "addFeed": "Add feed",
+    "deletedFeed": "Deleted feed",
+    "untitled": "(Untitled)",
+    "space": "Space"
+  },
+  "time": {
+    "now": "now",
+    "minutesShort": "{count}m",
+    "hoursShort": "{count}h",
+    "yesterdayShort": "yesterday",
+    "daysShort": "{count}d",
+    "minutesAgo": {
+      "one": "{count} min ago",
+      "other": "{count} min ago"
+    },
+    "hoursAgo": {
+      "one": "{count} hour ago",
+      "other": "{count} hours ago"
+    },
+    "yesterdayAt": "yesterday {time}",
+    "daysAgo": {
+      "one": "{count} day ago",
+      "other": "{count} days ago"
+    },
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "earlier": "Earlier"
+  },
+  "snooze": {
+    "title": "Snooze",
+    "hour1": "1 hour",
+    "hour4": "4 hours",
+    "morning": "Until tomorrow morning",
+    "morningShort": "Until morning",
+    "forever": "Until I turn them back on",
+    "until": "until {time}",
+    "untilTomorrow": "until tomorrow {time}",
+    "untilOn": "until you turn them back on"
+  },
+  "nav": {
+    "all": "All",
+    "unread": "Unread",
+    "starred": "Starred",
+    "notifications": "Notifications",
+    "feeds": "Feeds",
+    "addFeedTitle": "Add feed (N)"
+  },
+  "sidebar": {
+    "noFeeds": "You're not subscribed to any feeds yet.",
+    "notifyOff": "notifications off",
+    "feedSettings": "Feed settings",
+    "refreshing": "Refreshing…",
+    "refreshingProgress": "Refreshing… {done}/{total}",
+    "justRefreshed": "Just refreshed",
+    "lastRefresh": "Last refresh {time}",
+    "neverRefreshed": "Not refreshed yet",
+    "problems": {
+      "one": "{count} feed has a problem",
+      "other": "{count} feeds have problems"
+    },
+    "bellOn": "Notifications on",
+    "bellOff": "Notifications off",
+    "bellSnoozed": "Snoozed · {until}",
+    "bellQuiet": "Quiet hours"
+  },
+  "bellMenu": {
+    "unsnooze": "Turn notifications on now",
+    "enable": "Turn notifications on",
+    "test": "Send a test notification",
+    "history": "Notification history",
+    "settings": "Notification settings"
+  },
+  "list": {
+    "search": "Search posts  /",
+    "unreadOnly": "Show unread only",
+    "showAll": "Show all posts",
+    "markAll": "Mark everything in this list as read (Shift+A)",
+    "refresh": "Refresh (R)",
+    "noFeedsYet": "No feeds yet",
+    "results": {
+      "one": "{count} result for “{q}”",
+      "other": "{count} results for “{q}”"
+    },
+    "posts": {
+      "one": "{count} post",
+      "other": "{count} posts"
+    },
+    "unread": {
+      "one": "{count} unread",
+      "other": "{count} unread"
+    },
+    "allRead": "all read",
+    "loadMore": "Show more ({count})",
+    "emptyNoFeedsTitle": "No posts",
+    "emptyNoFeedsText": "Posts appear here once you add a feed.",
+    "emptyTitle": "Nothing here",
+    "noResultsTitle": "No results",
+    "noResultsText": "Try a different word.",
+    "noStarredTitle": "No starred posts",
+    "noStarredText": "Press S to star posts you want to read later.",
+    "allDoneTitle": "You're all caught up 🎉",
+    "allDoneText": "I'll let you know when something new arrives.",
+    "markedRead": {
+      "one": "Marked {count} post as read.",
+      "other": "Marked {count} posts as read."
+    },
+    "nothingUnread": "There were no unread posts."
+  },
+  "reader": {
+    "embedded": "Embedded content: {host}",
+    "image": "[Image: {alt}]",
+    "markUnread": "Mark as unread (M)",
+    "markRead": "Mark as read (M)",
+    "unstar": "Remove star (S)",
+    "star": "Star (S)",
+    "comments": "Comments",
+    "openKey": "Open in browser (O)",
+    "readOnSite": "Read the full post on the site",
+    "noContent": "This feed doesn't include the post's content. Open the site to read it.",
+    "pick": "Pick a post to read",
+    "keyboardHint": "You can also use the keyboard:",
+    "postGone": "This post is no longer stored."
+  },
+  "welcome": {
+    "title": "Welcome to Feedbell",
+    "p1": "Add the RSS or Atom feeds of the sites you follow. Feedbell checks them in the background; when something new is published, a popup appears in a corner of your screen and it's saved to your notification history.",
+    "p2": "Typing a site's address is enough — I'll find the feed. Coming from another reader? Import your subscriptions with OPML in Settings.",
+    "quickStart": "Quick start — click to add"
+  },
+  "keys": {
+    "nextPrev": "Next / previous post",
+    "space": "Scroll down, then next post",
+    "open": "Open in browser",
+    "star": "Star",
+    "toggleRead": "Mark as read / unread",
+    "starUnread": "Star / mark as unread",
+    "refreshAdd": "Refresh / add feed",
+    "markAll": "Mark everything in the list as read",
+    "refresh": "Refresh",
+    "add": "Add feed",
+    "search": "Search",
+    "settings": "Settings",
+    "views": "All / Unread / Starred / Notifications",
+    "addRefreshAll": "Add feed · Refresh all"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "sub": {
+      "one": "Last {count} notification",
+      "other": "Last {count} notifications"
+    },
+    "none": "No notifications yet",
+    "allFeeds": "All feeds",
+    "clear": "Clear history",
+    "unsnooze": "Turn on now",
+    "enable": "Turn notifications on",
+    "snooze": "Snooze…",
+    "test": "Test notification",
+    "emptyTitle": "Notification history is empty",
+    "emptyText": "When your feeds publish new posts, they're listed here.",
+    "gone": "(no longer stored)",
+    "more": {
+      "one": "+{count} more post",
+      "other": "+{count} more posts"
+    },
+    "newPosts": {
+      "one": "{count} new post",
+      "other": "{count} new posts"
+    },
+    "silentQuiet": "Arrived during quiet hours",
+    "silentSnoozed": "Arrived while snoozed",
+    "silentOff": "Arrived while notifications were off",
+    "stylePopup": "with a popup",
+    "styleSystem": "with a system notification",
+    "styleBoth": "with a popup and a system notification",
+    "statusOffTitle": "Notifications are off",
+    "statusOffText": "New posts are still recorded in this history.",
+    "statusSnoozedTitle": "Notifications snoozed {until}",
+    "statusSnoozedText": "Posts that arrive meanwhile collect here without popups.",
+    "statusQuietTitle": "It's quiet hours",
+    "statusQuietText": "No popups between {start} and {end}; new posts collect here.",
+    "statusOnTitle": "Notifications are on",
+    "statusOnText": "I'll tell you about new posts {style} · checking every {min} minutes."
+  },
+  "settings": {
+    "title": "Settings",
+    "sub": "Changes are saved immediately.",
+    "notificationsTitle": "Notifications",
+    "notificationsDesc": "How should I tell you about new posts?",
+    "notifyStyle": "Notification type",
+    "notifyStyleHint": "Popups are Feedbell's own window in a corner of the screen and don't need operating system notification permissions.",
+    "stylePopup": "Popup window",
+    "styleSystem": "System notification",
+    "styleBoth": "Both",
+    "styleOff": "Off (history only)",
+    "popupPosition": "Popup position",
+    "topRight": "Top right",
+    "bottomRight": "Bottom right",
+    "topLeft": "Top left",
+    "bottomLeft": "Bottom left",
+    "popupSeconds": "How long popups stay",
+    "popupSecondsHint": "The timer pauses while the pointer is over a popup.",
+    "seconds": {
+      "one": "{count} second",
+      "other": "{count} seconds"
+    },
+    "untilClosed": "Until I close it",
+    "sound": "Notification sound",
+    "quietHours": "Quiet hours",
+    "quietHoursHint": "No popups during these hours; new posts collect in the notification history.",
+    "tryIt": "Try it out",
+    "tryItHint": "Shows a sample notification with the latest post.",
+    "tryItHintMac": "If the system notification doesn't appear, allow Feedbell in System Settings → Notifications (\"Electron\" while developing).",
+    "tryItHintWin": "If the system notification doesn't appear, allow Feedbell in Windows Settings → Notifications.",
+    "sendTest": "Send a test notification",
+    "refreshTitle": "Refreshing",
+    "interval": "Check feeds",
+    "intervalHint": "Feeds that keep failing are retried less often.",
+    "everyMinutes": {
+      "one": "Every minute",
+      "other": "Every {count} minutes"
+    },
+    "everyHours": {
+      "one": "Every hour",
+      "other": "Every {count} hours"
+    },
+    "checkNow": "Check everything now",
+    "readingTitle": "Reading",
+    "markReadOnOpen": "Mark posts as read when I open them",
+    "loadImages": "Load images",
+    "loadImagesHint": "When off, images in posts are never downloaded from the sites.",
+    "retention": "Delete old posts",
+    "retentionHint": "Starred posts are never deleted.",
+    "olderThanDays": {
+      "one": "Older than {count} day",
+      "other": "Older than {count} days"
+    },
+    "olderThanYear": "Older than 1 year",
+    "never": "Never",
+    "appearanceTitle": "Appearance",
+    "mode": "Mode",
+    "modeSystem": "Match system",
+    "modeLight": "Light",
+    "modeDark": "Dark",
+    "theme": "Theme",
+    "themeHint": "Applies to the main window, the menu bar panel and popups.",
+    "defaultTheme": "default",
+    "readerFont": "Reading font",
+    "fontSans": "Sans-serif",
+    "fontSerif": "Serif",
+    "readerSize": "Text size",
+    "sizeSmall": "Small",
+    "sizeMedium": "Medium",
+    "sizeLarge": "Large",
+    "sizeXLarge": "Extra large",
+    "language": "Language",
+    "languageHint": "Want Feedbell in your language? Translations live in one file each — see CONTRIBUTING.md.",
+    "languageSystem": "System language ({name})",
+    "appTitle": "App",
+    "launchAtLogin": "Open at login",
+    "launchAtLoginHint": "Starts in the background without a window; notifications keep coming.",
+    "trayMac": "Menu bar icon",
+    "trayWin": "System tray icon",
+    "trayHint": "Click it to open the notification panel: recent notifications, unread posts, per-feed notification switches and snoozing. Right-click opens a quick menu. A dot appears when you have unseen notifications.",
+    "showPanel": "Show panel",
+    "showCount": "Show unread count",
+    "showCountHintMac": "Next to the menu bar icon and on the Dock icon.",
+    "showCountHintWin": "In the system tray icon's tooltip.",
+    "subscriptionsTitle": "Subscriptions",
+    "subscriptionsDesc": {
+      "one": "{count} feed · OPML is the common subscription list format of RSS readers.",
+      "other": "{count} feeds · OPML is the common subscription list format of RSS readers."
+    },
+    "importOpml": "Import OPML",
+    "exportOpml": "Export OPML",
+    "openData": "Open data folder",
+    "shortcutsTitle": "Keyboard shortcuts",
+    "footer": "Feedbell {version}{demo} · Your data stays on this computer: {dir}",
+    "demoMode": " · demo mode (sample data)",
+    "opmlAdded": {
+      "one": "Added {count} feed",
+      "other": "Added {count} feeds"
+    },
+    "opmlSkipped": {
+      "one": ", {count} was already there",
+      "other": ", {count} were already there"
+    },
+    "opmlDownloading": ". Downloading posts…",
+    "opmlNothing": "No new feeds; you're already subscribed to all of them.",
+    "noFeedsToExport": "There are no feeds to export.",
+    "exported": {
+      "one": "Exported {count} feed.",
+      "other": "Exported {count} feeds."
+    },
+    "testSystem": "System notification sent. If you don't see it, check your operating system's notification permissions.",
+    "testSent": "Test notification sent."
+  },
+  "themes": {
+    "ember": "Ember",
+    "ocean": "Ocean",
+    "forest": "Forest",
+    "lavender": "Lavender",
+    "sepia": "Sepia",
+    "graphite": "Graphite"
+  },
+  "addDialog": {
+    "title": "Add feed",
+    "hint": "Type a site's address or its RSS/Atom feed URL. If you give a site, I'll find the feed.",
+    "url": "Address",
+    "urlPlaceholder": "e.g. godotengine.org",
+    "folder": "Folder",
+    "optional": "optional",
+    "folderPlaceholder": "e.g. Game dev",
+    "notify": "Notify me about new posts",
+    "submitChosen": "Add selected",
+    "checking": "Checking…",
+    "quickStart": "Quick start",
+    "needUrl": "Type an address.",
+    "choices": {
+      "one": "This page has {count} feed. Which one should I add?",
+      "other": "This page has {count} feeds. Which one should I add?"
+    },
+    "added": "Added “{name}”.",
+    "githubReleases": "new releases",
+    "githubTags": "tags",
+    "githubCommits": "commits"
+  },
+  "feedDialog": {
+    "title": "Feed settings",
+    "name": "Display name",
+    "folder": "Folder",
+    "folderPlaceholder": "No folder",
+    "notify": "Notify me about new posts",
+    "keywords": "Only notify when these words appear",
+    "keywordsHint": "comma-separated · leave empty for every post",
+    "keywordsPlaceholder": "e.g. godot, release, sale",
+    "delete": "Unsubscribe",
+    "lastError": "Last attempt {time}: {error}",
+    "lastOk": "Last successful check: {date}",
+    "neverChecked": "Not checked yet.",
+    "openSite": "Open site",
+    "markAllRead": "Mark all as read",
+    "saved": "Feed settings saved.",
+    "deleted": "Unsubscribed.",
+    "refreshing": "Refreshing {name}…"
+  },
+  "panel": {
+    "unread": {
+      "one": "{count} unread",
+      "other": "{count} unread"
+    },
+    "noUnread": "No unread posts",
+    "refreshing": "refreshing…",
+    "refreshingProgress": "refreshing {done}/{total}",
+    "justRefreshed": "just refreshed",
+    "refreshedAt": "refreshed at {time}",
+    "openApp": "Open Feedbell",
+    "more": "Notification options and quit",
+    "stylePopup": "as popups",
+    "styleSystem": "as system notifications",
+    "styleBoth": "as popups and system notifications",
+    "onTitle": "Notifications on",
+    "onText": "New posts arrive {style}",
+    "onTextSound": "New posts arrive {style}, with sound",
+    "snoozedTitle": "Notifications snoozed",
+    "snoozedText": "{until} · new posts collect in history",
+    "quietTitle": "Quiet hours",
+    "quietText": "No popups between {start} and {end}",
+    "offTitle": "Notifications off",
+    "offText": "New posts are only recorded in history",
+    "unsnooze": "Turn on now",
+    "enable": "Turn notifications on",
+    "snoozeLabel": "Snooze:",
+    "switchOff": "Snooze notifications",
+    "switchOn": "Turn notifications on",
+    "tabNotifications": "Notifications",
+    "tabUnread": "Unread",
+    "tabFeeds": "Feeds",
+    "emptyNotificationsTitle": "No notifications yet",
+    "emptyNotificationsText": "New posts from your feeds will show up here.",
+    "emptyNotificationsNoFeeds": "Add a few feeds first; new posts will be listed here as they arrive.",
+    "emptyUnreadNoFeeds": "Posts appear here once you add a feed.",
+    "emptyFeedsTitle": "No feeds yet",
+    "emptyFeedsText": "Add the sites you want to follow.",
+    "silentQuiet": "quiet hours",
+    "silentSnoozed": "snoozed",
+    "silentOff": "off",
+    "posts": {
+      "one": "{count} post",
+      "other": "{count} posts"
+    },
+    "morePosts": {
+      "one": "+{count} more post",
+      "other": "+{count} more posts"
+    },
+    "actRead": "Mark as read",
+    "actMute": "Don't notify me about this feed",
+    "actUnmute": "Turn this feed's notifications on",
+    "actRemove": "Remove from history",
+    "feedsHeader": {
+      "one": "{on}/{count} feed sends notifications",
+      "other": "{on}/{count} feeds send notifications"
+    },
+    "only": "only: {words}",
+    "notifyOff": "Turn notifications off",
+    "notifyOn": "Turn notifications on",
+    "feedNotifications": "{name} notifications",
+    "lastN": {
+      "one": "Last {count} notification",
+      "other": "Last {count} notifications"
+    },
+    "clear": "Clear",
+    "fullHistory": "Full history",
+    "confirmClear": "Clear the notification history?",
+    "clearYes": "Clear",
+    "showing": "Showing {shown} of {count}",
+    "markAllRead": "Mark all as read",
+    "readInApp": "Read in app",
+    "notificationSettings": "Notification settings",
+    "addFeedPlus": "+ Add feed",
+    "unmuted": "Notifications turned on for {name}.",
+    "muted": "{name} won't send notifications anymore.",
+    "snoozedMorning": "Notifications snoozed until tomorrow morning.",
+    "snoozedHours": {
+      "one": "Notifications snoozed for {count} hour.",
+      "other": "Notifications snoozed for {count} hours."
+    },
+    "snoozedForever": "Notifications snoozed until you turn them back on."
+  },
+  "toast": {
+    "newPosts": {
+      "one": "{count} new post",
+      "other": "{count} new posts"
+    },
+    "more": {
+      "one": "+{count} more post",
+      "other": "+{count} more posts"
+    },
+    "read": "Read",
+    "seeAll": "See all",
+    "moreFeeds": {
+      "one": "{count} more post from {feeds} feeds",
+      "other": "{count} more posts from {feeds} feeds"
+    },
+    "openHistory": "Open notification history"
+  },
+  "system": {
+    "manyTitle": {
+      "one": "{count} new post",
+      "other": "{count} new posts"
+    },
+    "manyBody": "From {feeds} feeds: {names}",
+    "andOthers": " and others",
+    "feedMany": {
+      "one": "{feed} · {count} new post",
+      "other": "{feed} · {count} new posts"
+    },
+    "closeHintTitle": "Feedbell is still running",
+    "closeHintMac": "I'll keep checking for new posts and notify you. Click the menu bar icon to open the notification panel; to quit completely, right-click it and choose Quit Feedbell.",
+    "closeHintWin": "I'll keep checking for new posts and notify you. Click the system tray icon to open the notification panel; to quit completely, right-click it and choose Quit Feedbell.",
+    "testTitle": "Notifications are working",
+    "testBody": "When your feeds publish something new, you'll be notified like this.",
+    "aboutCredits": "An RSS and Atom reader that tells you about new posts."
+  },
+  "confirm": {
+    "removeFeedMessage": "Unsubscribe from “{name}”?",
+    "removeFeedDetail": {
+      "one": "The {count} stored post from this feed will be deleted too (including starred ones). Notification history is kept.",
+      "other": "The {count} stored posts from this feed will be deleted too (including starred ones). Notification history is kept."
+    },
+    "removeFeedOk": "Unsubscribe",
+    "clearMessage": "Clear the notification history?",
+    "clearDetail": "Posts aren't deleted; only the history list is emptied.",
+    "clearOk": "Clear"
+  },
+  "opml": {
+    "importTitle": "Import from an OPML file",
+    "exportTitle": "Export subscriptions",
+    "fileName": "feedbell-subscriptions.opml",
+    "docTitle": "Feedbell subscriptions"
+  },
+  "tray": {
+    "unread": {
+      "one": "{count} unread post",
+      "other": "{count} unread posts"
+    },
+    "noUnread": "No unread posts",
+    "refreshing": "Refreshing… ({done}/{total})",
+    "lastRefresh": "Last refresh {time}",
+    "neverRefreshed": "Not refreshed yet",
+    "openPanel": "Open notification panel",
+    "openApp": "Open Feedbell",
+    "recent": "Recent notifications",
+    "noneYet": "No notifications yet",
+    "history": "Notification history",
+    "test": "Send a test notification",
+    "settings": "Settings…",
+    "quit": "Quit Feedbell",
+    "newPosts": {
+      "one": "{count} new post",
+      "other": "{count} new posts"
+    },
+    "tooltipUnread": {
+      "one": "Feedbell — {count} unread post",
+      "other": "Feedbell — {count} unread posts"
+    },
+    "tooltipNew": {
+      "one": "{count} new notification",
+      "other": "{count} new notifications"
+    },
+    "tooltipSnoozed": "Notifications snoozed {until}",
+    "tooltipQuiet": "Quiet hours",
+    "tooltipOff": "Notifications off",
+    "notifyOn": "Turn notifications on",
+    "unsnooze": "Turn notifications on (snoozed {until})",
+    "snooze": "Snooze notifications"
+  },
+  "panelMenu": {
+    "style": "Notification type",
+    "position": "Popup position",
+    "duration": "Popup duration",
+    "sound": "Notification sound",
+    "quiet": "Quiet hours ({start}–{end})"
+  },
+  "menu": {
+    "about": "About Feedbell",
+    "settings": "Settings…",
+    "services": "Services",
+    "hide": "Hide Feedbell",
+    "hideOthers": "Hide Others",
+    "unhide": "Show All",
+    "quit": "Quit Feedbell",
+    "file": "File",
+    "addFeed": "Add Feed…",
+    "refreshAll": "Refresh All",
+    "importOpml": "Import OPML…",
+    "exportOpml": "Export OPML…",
+    "closeWindow": "Close Window",
+    "exit": "Exit",
+    "edit": "Edit",
+    "undo": "Undo",
+    "redo": "Redo",
+    "cut": "Cut",
+    "copy": "Copy",
+    "paste": "Paste",
+    "selectAll": "Select All",
+    "find": "Search Posts",
+    "view": "View",
+    "all": "All",
+    "unread": "Unread",
+    "starred": "Starred",
+    "history": "Notification History",
+    "markAll": "Mark Everything in List as Read",
+    "theme": "Theme",
+    "mode": "Appearance",
+    "zoomIn": "Larger",
+    "zoomOut": "Smaller",
+    "resetZoom": "Actual Size",
+    "fullscreen": "Toggle Full Screen",
+    "devtools": "Developer Tools",
+    "notifications": "Notifications",
+    "openPanel": "Open Notification Panel",
+    "test": "Send a Test Notification",
+    "notificationSettings": "Notification Settings…",
+    "window": "Window",
+    "minimize": "Minimize",
+    "zoom": "Zoom",
+    "front": "Bring All to Front",
+    "help": "Help",
+    "shortcuts": "Keyboard Shortcuts",
+    "dataFolder": "Open Data Folder"
+  },
+  "errors": {
+    "notFeed": "This address isn't an RSS/Atom feed.",
+    "emptyResponse": "The server returned an empty response.",
+    "noFeedOnPage": "Couldn't find an RSS/Atom feed on this page. Try typing the feed's address directly.",
+    "emptyUrl": "Type an address.",
+    "invalidUrl": "That's not a valid address.",
+    "httpOnly": "Only http and https addresses are supported.",
+    "timeout": "The connection timed out.",
+    "dns": "Couldn't find the server. Check the address and your internet connection.",
+    "offline": "No internet connection.",
+    "refused": "The server refused the connection.",
+    "certificate": "Couldn't establish a secure connection (certificate error).",
+    "redirects": "Too many redirects.",
+    "network": "Couldn't connect ({detail}).",
+    "http400": "The server rejected the request (400).",
+    "http401": "This feed requires signing in (401).",
+    "http403": "The site blocked access (403).",
+    "http404": "Address not found (404).",
+    "http410": "The feed has been removed (410).",
+    "http429": "Too many requests; the site asks us to wait (429).",
+    "http5xx": "Server error ({status}). It will be retried later.",
+    "httpOther": "The server returned error {status}.",
+    "tooLarge": "The response is too large.",
+    "opmlInvalid": "This file isn't an OPML file.",
+    "alreadySubscribed": "You're already subscribed to this feed: {name}"
+  }
+}

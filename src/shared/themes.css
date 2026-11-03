@@ -1,0 +1,116 @@
+/* Renk temaları: ana pencere, menü çubuğu paneli ve popup aynı değişkenleri kullanır.
+   <html data-theme="ocean"> temayı, işletim sisteminin (ya da Ayarlar'daki) açık/koyu modu da varyantı seçer.
+   Yeni tema eklerken: aşağıya açık ve koyu iki blok yaz; vurgu rengi --accent-ink ile en az 4.5:1 kontrast vermeli. */
+
+:root {
+  color-scheme: light;
+  --star: #c98a00;
+  --critical: #c93434;
+  --good: #128a3e;
+  --warning: #b97a00;
+  --hover: rgba(18, 18, 17, 0.05);
+  --press: rgba(18, 18, 17, 0.1);
+  --border: rgba(18, 18, 17, 0.1);
+  --shadow-pop: 0 12px 36px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+  --reader-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --reader-size: 16.5px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --star: #f5b83d;
+    --critical: #ef6a6a;
+    --good: #3cc46e;
+    --warning: #f2b630;
+    --hover: rgba(255, 255, 255, 0.05);
+    --press: rgba(255, 255, 255, 0.1);
+    --border: rgba(255, 255, 255, 0.1);
+    --shadow-pop: 0 12px 36px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Kor (varsayılan) */
+:root,
+[data-theme="ember"] {
+  --page: #f3f2ee; --surface: #fcfcfb; --surface-2: #f7f6f2; --sunken: #eeede8; --grid: #e5e4dd;
+  --text: #121211; --text-2: #4f4e4a; --muted: #84827b;
+  --accent: #c2470c; --accent-ink: #ffffff;
+}
+/* Okyanus */
+[data-theme="ocean"] {
+  --page: #eef2f6; --surface: #fbfcfe; --surface-2: #f4f7fa; --sunken: #e6ebf1; --grid: #dde3ea;
+  --text: #0f1720; --text-2: #44505e; --muted: #7a8694;
+  --accent: #1d63c4; --accent-ink: #ffffff;
+}
+/* Orman */
+[data-theme="forest"] {
+  --page: #f0f3ee; --surface: #fbfcfa; --surface-2: #f4f7f2; --sunken: #e7ece4; --grid: #dfe5dc;
+  --text: #111611; --text-2: #485047; --muted: #7c857a;
+  --accent: #2e7d32; --accent-ink: #ffffff;
+}
+/* Lavanta */
+[data-theme="lavender"] {
+  --page: #f3f1f7; --surface: #fcfbfe; --surface-2: #f7f5fa; --sunken: #ebe7f2; --grid: #e3dfeb;
+  --text: #15121b; --text-2: #4e4858; --muted: #847d8f;
+  --accent: #6b46c1; --accent-ink: #ffffff;
+}
+/* Sepya: kâğıt tonları, uzun okumalar için */
+[data-theme="sepia"] {
+  --page: #efe6d6; --surface: #f8f1e4; --surface-2: #f3ead9; --sunken: #e8dcc6; --grid: #e2d5bd;
+  --text: #2b2217; --text-2: #5a4a36; --muted: #8a7860;
+  --accent: #9a4a1c; --accent-ink: #ffffff;
+  --border: rgba(60, 40, 15, 0.14);
+}
+/* Grafit: renksiz, yüksek kontrast; koyu modda tam siyah (OLED) */
+[data-theme="graphite"] {
+  --page: #f2f2f2; --surface: #ffffff; --surface-2: #f7f7f7; --sunken: #ebebeb; --grid: #e2e2e2;
+  --text: #0a0a0a; --text-2: #444444; --muted: #767676;
+  --accent: #262626; --accent-ink: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  [data-theme="ember"] {
+    --page: #0f0f0e; --surface: #191918; --surface-2: #141413; --sunken: #222220; --grid: #2a2a28;
+    --text: #f1f0ec; --text-2: #c6c5bd; --muted: #8d8b84;
+    --accent: #f08a4b; --accent-ink: #141413;
+  }
+  [data-theme="ocean"] {
+    --page: #0b1016; --surface: #131a22; --surface-2: #0f151c; --sunken: #1b2430; --grid: #222c38;
+    --text: #e9eef4; --text-2: #b9c3cf; --muted: #7f8b98;
+    --accent: #5aa2ff; --accent-ink: #0b1016;
+  }
+  [data-theme="forest"] {
+    --page: #0c100c; --surface: #151b15; --surface-2: #111611; --sunken: #1e261e; --grid: #253025;
+    --text: #ebf0ea; --text-2: #bfc8be; --muted: #849082;
+    --accent: #5cc46a; --accent-ink: #0c100c;
+  }
+  [data-theme="lavender"] {
+    --page: #0f0d13; --surface: #18151e; --surface-2: #13111a; --sunken: #221e2a; --grid: #2a2532;
+    --text: #efecf4; --text-2: #c6c0d0; --muted: #8d8698;
+    --accent: #a98bff; --accent-ink: #0f0d13;
+  }
+  [data-theme="sepia"] {
+    --page: #17120c; --surface: #211a12; --surface-2: #1b150e; --sunken: #2c2318; --grid: #33291c;
+    --text: #efe3cf; --text-2: #cdbb9f; --muted: #978670;
+    --accent: #e0a066; --accent-ink: #17120c;
+    --border: rgba(255, 235, 200, 0.12);
+  }
+  [data-theme="graphite"] {
+    --page: #000000; --surface: #0a0a0a; --surface-2: #050505; --sunken: #161616; --grid: #1f1f1f;
+    --text: #f2f2f2; --text-2: #bdbdbd; --muted: #858585;
+    --accent: #e8e8e8; --accent-ink: #0a0a0a;
+  }
+}
+
+/* Vurgu renginden türetilenler */
+:root {
+  --accent-wash: color-mix(in srgb, var(--accent) 11%, transparent);
+  --accent-strong-wash: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+/* Okuma ayarları */
+html[data-reader-font="serif"] { --reader-font: "Iowan Old Style", "Charter", Georgia, Cambria, "Times New Roman", serif; }
+html[data-reader-size="small"] { --reader-size: 15px; }
+html[data-reader-size="large"] { --reader-size: 18.5px; }
+html[data-reader-size="xlarge"] { --reader-size: 21px; }

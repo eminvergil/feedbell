@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data: blob:; media-src *; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-src 'none'; object-src 'none'; connect-src 'none'; form-action 'none'">
+<title>Feedbell</title>
+<link rel="stylesheet" href="../shared/themes.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- data-i18n: metin, data-i18n-title / -placeholder / -aria: özellik çevirileri (src/locales/*.json) -->
+<div class="app" id="app">
+  <aside class="sidebar">
+    <div class="side-top">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/icon.png" alt="">
+        <span class="brand-name">Feedbell</span>
+      </div>
+      <button class="icon-btn" id="btn-add" data-i18n-title="nav.addFeedTitle" data-i18n-aria="common.addFeed">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item" data-scope="all">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span data-i18n="nav.all"></span><span class="count" data-count="all"></span>
+      </button>
+      <button class="nav-item" data-scope="unread">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="2.6" class="fill"/></svg><span data-i18n="nav.unread"></span><span class="count" data-count="unread"></span>
+      </button>
+      <button class="nav-item" data-scope="starred">
+        <svg viewBox="0 0 24 24"><path d="m12 3.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg><span data-i18n="nav.starred"></span><span class="count" data-count="starred"></span>
+      </button>
+      <button class="nav-item" data-view="notifications">
+        <svg viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 1 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg><span data-i18n="nav.notifications"></span><span class="count badge" data-count="notifications"></span>
+      </button>
+    </nav>
+
+    <div class="feeds-head" data-i18n="nav.feeds"></div>
+    <div class="feeds" id="feeds"></div>
+
+    <div class="side-foot">
+      <div class="sync" id="sync" title="">
+        <span class="sync-icon" id="sync-icon"></span><span class="sync-text" id="sync-text"></span>
+      </div>
+      <div class="foot-row">
+        <div class="menu-wrap">
+          <button class="bell-btn" id="btn-bell"></button>
+          <div class="menu hidden" id="menu-bell"></div>
+        </div>
+        <button class="icon-btn" data-view="settings" data-i18n-title="common.settings" data-i18n-aria="common.settings">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4m0 13.6v2.4M2.8 12h2.4m13.6 0h2.4M5.5 5.5l1.7 1.7m9.6 9.6 1.7 1.7m0-13-1.7 1.7m-9.6 9.6-1.7 1.7"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <section class="list-pane" id="list-pane">
+    <header class="list-head">
+      <div class="lh-title">
+        <h2 id="list-title"></h2>
+        <span class="lh-sub" id="list-sub"></span>
+      </div>
+      <div class="lh-actions">
+        <button class="icon-btn" id="btn-unread" aria-pressed="false">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16l-6 7.5V19l-4 1.5v-7z"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-markall" data-i18n-title="list.markAll">
+          <svg viewBox="0 0 24 24"><path d="m2.5 12.5 4.5 4.5L17 7m-5 10 1 1L22.5 7"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-refresh" data-i18n-title="list.refresh">
+          <svg viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 0 5.6 6.8L4 8.5M4 4v4.5h4.5M4 12.5a8 8 0 0 0 14.4 4.7l1.6-1.7m0 4.5v-4.5h-4.5"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="search" type="search" data-i18n-placeholder="list.search" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="items" id="items" role="listbox"></div>
+  </section>
+
+  <section class="reader" id="reader" aria-live="polite"></section>
+
+  <section class="page hidden" id="page-notifications"></section>
+  <section class="page hidden" id="page-settings"></section>
+</div>
+
+<dialog id="dlg-add" class="dialog">
+  <form id="form-add" novalidate>
+    <h3 data-i18n="addDialog.title"></h3>
+    <p class="hint" data-i18n="addDialog.hint"></p>
+    <label class="field">
+      <span data-i18n="addDialog.url"></span>
+      <input name="url" id="add-url" data-i18n-placeholder="addDialog.urlPlaceholder" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="choices hidden" id="add-choices"></div>
+    <label class="field">
+      <span><span data-i18n="addDialog.folder"></span> <small data-i18n="addDialog.optional"></small></span>
+      <input name="folder" list="folder-list" autocomplete="off" data-i18n-placeholder="addDialog.folderPlaceholder">
+    </label>
+    <label class="check"><input type="checkbox" name="notify" checked> <span data-i18n="addDialog.notify"></span></label>
+    <div class="form-error hidden" id="add-error" role="alert"></div>
+    <div class="dlg-actions">
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" data-close data-i18n="common.cancel"></button>
+      <button type="submit" class="btn" id="add-submit" data-i18n="common.add"></button>
+    </div>
+    <div class="suggest" id="suggest-wrap">
+      <div class="suggest-label" data-i18n="addDialog.quickStart"></div>
+      <div class="chips" id="suggest"></div>
+    </div>
+  </form>
+</dialog>
+<datalist id="folder-list"></datalist>
+
+<dialog id="dlg-feed" class="dialog">
+  <form id="form-feed" novalidate>
+    <div class="dlg-head"><span id="feed-fav"></span><h3 id="feed-title"></h3></div>
+    <div class="feed-meta" id="feed-meta"></div>
+    <label class="field">
+      <span data-i18n="feedDialog.name"></span>
+      <input name="name" autocomplete="off">
+    </label>
+    <label class="field">
+      <span data-i18n="feedDialog.folder"></span>
+      <input name="folder" list="folder-list" autocomplete="off" data-i18n-placeholder="feedDialog.folderPlaceholder">
+    </label>
+    <label class="check"><input type="checkbox" name="notify"> <span data-i18n="feedDialog.notify"></span></label>
+    <label class="field">
+      <span><span data-i18n="feedDialog.keywords"></span> <small data-i18n="feedDialog.keywordsHint"></small></span>
+      <input name="keywords" autocomplete="off" data-i18n-placeholder="feedDialog.keywordsPlaceholder">
+    </label>
+    <div class="dlg-actions">
+      <button type="button" class="btn ghost danger" id="feed-delete" data-i18n="feedDialog.delete"></button>
+      <span class="spacer"></span>
+      <button type="button" class="btn ghost" data-close data-i18n="common.cancel"></button>
+      <button type="submit" class="btn" data-i18n="common.save"></button>
+    </div>
+  </form>
+</dialog>
+
+<div class="snack hidden" id="snack" role="status"></div>
+<script src="../shared/i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

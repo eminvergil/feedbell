@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="100" x2="924" y2="924" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9a4d"/>
+      <stop offset="1" stop-color="#d9440b"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="300" cy="180" r="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <mask id="waves">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <!-- Zilin içine oyulmuş RSS dalgaları -->
+      <circle cx="430" cy="628" r="38" fill="#000"/>
+      <path d="M392 512 A128 128 0 0 1 520 640" fill="none" stroke="#000" stroke-width="52" stroke-linecap="round"/>
+      <path d="M392 410 A230 230 0 0 1 622 640" fill="none" stroke="#000" stroke-width="52" stroke-linecap="round"/>
+    </mask>
+  </defs>
+
+  <rect x="100" y="114" width="824" height="824" rx="185" fill="#5a1d05" fill-opacity=".35" filter="url(#shadow)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#gloss)"/>
+
+  <!-- Zil -->
+  <g fill="#ffffff">
+    <circle cx="512" cy="232" r="40"/>
+    <path mask="url(#waves)" d="M512 250c-140 0-236 106-236 252v118c0 24-8 46-23 64l-38 46c-15 19-2 48 23 48h548c25 0 38-29 23-48l-38-46c-15-18-23-40-23-64V502c0-146-96-252-236-252z"/>
+    <path d="M436 790h152c0 42-34 76-76 76s-76-34-76-76z"/>
+  </g>
+
+  <!-- Yeni yazı noktası -->
+  <circle cx="744" cy="282" r="84" fill="#ffd23f" stroke="#ffffff" stroke-width="26"/>
+</svg>
